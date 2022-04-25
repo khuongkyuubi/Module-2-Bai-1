@@ -27,6 +27,7 @@ console.log(copyArry);
 const customerOrder = []; // khao báo kiểu mảng
 function recordOrders(time, ...drinks) {
     // customerOrder.push({time, birds: Array.prototype.slice.call(arguments, 1)})
+    // Array.prototype.slice.call(arguments) -> convert arguments to Array
     customerOrder.push({time, birds: drinks}) // rest parameter
 }
 
